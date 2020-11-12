@@ -1,0 +1,398 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lato', 'sans-serif';
+    line-height: 2;
+    font-size: 1.6rem; /*16px*/
+}
+
+.fw-300
+{
+    font-weight: 300;
+}
+
+.centrar-texto
+{
+    text-align: center;
+}
+
+/* GLOBALES */
+.seccion
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor
+{
+    max-width: 120rem; /* 1200px */
+    margin: 0 auto 0 auto; /* Los numeros van mediante las manecillas de reloj, arriba, derecha, abajo, izquierda. o puede ser de esta forma: margin: 0 auto; y funciona totalmente igual*/
+}
+
+h1
+{
+    font-size: 3.8rem;
+}
+
+h2
+{
+    font-size: 3.4rem;
+}
+
+h3
+{
+    font-size: 3rem;
+}
+
+h2
+{
+    font-size: 2.6rem;
+}
+body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem ; /* 16px */
+    line-height: 2;
+}
+
+img /* dice que las imagenes ocupen el espacio total de su contenedor */
+{
+    max-width: 100%;
+}
+
+.d-block
+{
+    display: block!important;
+}
+
+/* HEADER */
+.site-hearder.inicio /* Estilos a las dos clases */
+{
+    background-image: url(../img/header.jpg);
+    height: 100vh; /* la imagen ocupa el 100% del dispositivo donde se vea */
+    min-height: 600px;
+    background-position: centro centro; /* pone la imagen del centro hacia afuera*/
+    background-size: cover; /* forza a la imagen a utilizar el espacio desponible guardando proporcionalidad */
+}
+
+.site-hearder{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.contenido-header  
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header  h1
+{
+    color: lavender;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.navegacion a
+{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+}
+
+.navegacion a:last-of-type   /* se selecciona el ultimo elemento*/
+{
+   margin: 0px;
+}
+
+.navegacion a:hover
+{
+    color: mediumaquamarine;
+}
+
+/* TAREA: ENTRADA puro texto*/
+/* Selectores css que se debe de aprender */
+
+/* SECCIÓN NOSOTROS */
+.encabezado-nosotros
+{
+text-align: center;
+font-weight: 300;
+}
+
+.iconos-nosotros
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.icono
+{
+    flex-basis: calc(33.3% - 2rem); /* estamos estableciendo una base de tamaño */
+}
+
+.icono h3
+{
+    text-transform: uppercase;
+}
+
+/* ANUNCIOS */
+.contenedor-anuncios /* contenedor padre*/
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio
+{
+    flex-basis: cal(33.3% - 1rem);
+    border: 1px solid #b5b5b5b5;
+    background-color: #f5f5f5f5;
+}
+
+.contendio-anuncio
+{
+    padding: 2rem;
+}
+
+
+.contendio-anuncio h3, 
+.contendio-anuncio p
+{
+    margin: 0;
+}
+
+.precio
+{
+    color: #71b100;
+    font-weight: 700;
+}
+
+.iconos-caracteristicas{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos-caracteristicas li{
+    display: flex;
+}
+
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+}
+
+.boton
+{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boton-amarillo
+{
+    background-color: #E08709;
+}
+
+.boton-verde
+{
+    background-color: #71b100;
+}
+
+.ver-todas
+{
+    text-align: right;
+    justify-content: flex-end;
+}
+
+/* Contacto home */
+.imagen-contacto
+{
+    background-image: url(../img/encuentra.jpg);
+    height: 40rem;
+    /* decir que vamos del centro hacia izquierda y derecha*/
+    background-position:center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto
+{
+    flex: 1; /* factor de crecimiento */
+    color: white;
+}
+.contenido-contacto p
+{
+    font-size: 1.8rem;
+}
+
+/* Blog y testimoniales*/
+.seccion-inferior
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog
+{
+    flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales
+{
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog:last-of-type
+{
+    margin: 0;
+}
+.entrada-blog
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog .imagen
+{
+    flex-basis: 40%;
+}
+
+.texto-entrada
+{
+    flex-basis: calc(60% - 2rem);
+}
+
+.texto-entrada h4{
+    margin: 0;
+}
+
+.texto-entrada a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+/*crear un pseudoelemento: es un elemento que no existe, que no se puede seleccionar en elos navegadores*/
+.texto-entrada h4::after
+{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+}
+
+.texto-entrada span
+{
+    color: #E08709;
+    
+}
+
+
+.testimonial
+{
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 4rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+.testimonial p{
+    text-align: right;
+}
+
+.testimonial blockquote::before
+{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute; /*2. especificar que sea una posicion fija*/
+    top: 0;
+    left: -2rem;
+    right: 0;
+    bottom: 0;
+}
+
+.testimonial blockquote
+{
+    position: relative; /*1 especifocar posisión relatica*/
+    padding-left: 5rem;
+}
+
+/*FOOOTER*/
+.site-footer
+{
+    background-color: #333333;
+}
+
+.copyright
+{
+    margin: 0;
+    color: #fff;
+}
+
+.contenedor-footer
+{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: #fff; 
+}
+
+/* estilos a las - Páginas internas */
+
+.contenido-nosotros
+{
+    display: grid; /* CSS grid*/
+    grid-template-columns: repeat(2,50%); /*50% 50% */
+    grid-column-gap: 2rem; /*dar espaciado entre los elementos*/ 
+}
+
+.contenido-nosotros blockquote
+{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
